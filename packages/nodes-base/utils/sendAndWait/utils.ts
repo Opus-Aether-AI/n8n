@@ -69,7 +69,7 @@ const appendAttributionOption: INodeProperties = {
 	displayName: 'Append n8n Attribution',
 	name: 'appendAttribution',
 	type: 'boolean',
-	default: true,
+	default: false,
 	description:
 		'Whether to include the phrase "This message was sent automatically with n8n" to the end of the message',
 };
