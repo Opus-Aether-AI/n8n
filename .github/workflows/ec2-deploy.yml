@@ -24,5 +24,5 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i ec2_key.pem ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
             cd /opus/nig8nig/n8n
             git pull origin master
-            pm2 restart
+            pm2 restart n8n
           EOF
