@@ -46,7 +46,8 @@ export const appendAttributionOption: INodeProperties = {
 	displayName: 'Append n8n Attribution',
 	name: 'appendAttribution',
 	type: 'boolean',
-	default: true,
+	default: false,
+	description: 'Whether to append "sent via n8n" to the message',
 };
 
 export const encodeDecodeOptions: INodePropertyOptions[] = [
@@ -459,3 +460,7 @@ export const encodeDecodeOptions: INodePropertyOptions[] = [
 		value: 'windows874',
 	},
 ];
+
+export const selfHealOption: INodeProperties = {
+	// ... existing code ...
+};
